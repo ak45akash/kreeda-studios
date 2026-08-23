@@ -1,0 +1,7 @@
+# Portfolio images
+
+Place project images here when available.
+
+Expected naming: `{project-id}.jpg` or `{project-id}.webp`
+
+Current portfolio items use CSS gradient placeholders defined in `src/data/portfolio.ts`.

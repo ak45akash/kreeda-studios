@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --near-black: #05070a;
+  --deep-charcoal: #0b1016;
+  --dark-surface: #111821;
+  --white: #f5f7fa;
+  --muted-gray: #9ba6b2;
+  --metallic-gray: #c7cdd4;
+  --kreeda-blue: #008cff;
+  --electric-blue: #19a7ff;
+}
+
+@theme inline {
+  --color-near-black: var(--near-black);
+  --color-deep-charcoal: var(--deep-charcoal);
+  --color-dark-surface: var(--dark-surface);
+  --color-white: var(--white);
+  --color-muted-gray: var(--muted-gray);
+  --color-metallic-gray: var(--metallic-gray);
+  --color-kreeda-blue: var(--kreeda-blue);
+  --color-electric-blue: var(--electric-blue);
+  --font-sans: var(--font-space-grotesk);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--near-black);
+  color: var(--white);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--kreeda-blue) 35%, transparent);
+  color: var(--white);
+}
+
+.noise-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--kreeda-blue) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--kreeda-blue) 8%, transparent) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+}
+
+.hero-glow {
+  background:
+    radial-gradient(ellipse 60% 50% at 70% 40%, color-mix(in srgb, var(--kreeda-blue) 15%, transparent), transparent),
+    radial-gradient(ellipse 40% 30% at 20% 70%, color-mix(in srgb, var(--electric-blue) 10%, transparent), transparent);
+}
+
+.hero-particles {
+  background-image:
+    radial-gradient(circle, var(--kreeda-blue) 1px, transparent 1px),
+    radial-gradient(circle, var(--electric-blue) 0.5px, transparent 0.5px);
+  background-size: 80px 80px, 120px 120px;
+  background-position: 0 0, 40px 40px;
+  animation: drift 20s linear infinite;
+  opacity: 0.3;
+}
+
+.hero-wireframe {
+  background:
+    conic-gradient(from 0deg at 50% 50%, transparent 0deg, color-mix(in srgb, var(--kreeda-blue) 12%, transparent) 60deg, transparent 120deg),
+    radial-gradient(circle at 50% 50%, transparent 30%, color-mix(in srgb, var(--kreeda-blue) 5%, transparent) 31%, transparent 32%);
+  animation: rotate-slow 30s linear infinite;
+}
+
+.cta-glow {
+  background: radial-gradient(
+    ellipse 50% 60% at 50% 50%,
+    color-mix(in srgb, var(--kreeda-blue) 12%, transparent),
+    transparent
+  );
+}
+
+.cta-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--kreeda-blue) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--kreeda-blue) 6%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.scan-line {
+  animation: scan 2s ease-in-out infinite;
+}
+
+.scan-lines {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    color-mix(in srgb, var(--kreeda-blue) 4%, transparent) 2px,
+    color-mix(in srgb, var(--kreeda-blue) 4%, transparent) 4px
+  );
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-particles,
+  .hero-wireframe,
+  .scan-line,
+  .marquee-track {
+    animation: none;
+  }
+}
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-80px); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scan {
+  0%, 100% { transform: translateY(0); opacity: 0; }
+  50% { transform: translateY(100%); opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}
