@@ -54,7 +54,7 @@ export const services: Service[] = [
       "Professional editing, pacing, transitions, sound synchronization, motion graphics and final delivery.",
     icon: Clapperboard,
     accent: "from-electric-blue/15 to-transparent",
-    image: "/images/showreel-still.png",
+    image: "/images/services/editing.jpg",
   },
   {
     number: "05",

@@ -71,8 +71,9 @@ export function Navbar() {
             href="#home"
             className="relative z-10 flex shrink-0 items-center gap-3"
             onClick={handleNavClick}
+            aria-label="Kreeda Studios home"
           >
-            <BrandLogo height={64} priority className="px-0.5" />
+            <BrandLogo height={56} priority />
           </Link>
 
           <ul className="hidden items-center gap-8 lg:flex">

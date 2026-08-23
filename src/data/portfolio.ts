@@ -20,7 +20,7 @@ export const portfolioItems: PortfolioItem[] = [
     software: ["Blender", "Unreal Engine"],
     label: "CONCEPT",
     size: "large",
-    image: "/images/hero-worlds.png",
+    image: "/images/portfolio/cinematic-environment.jpg",
   },
   {
     id: "sci-fi-character",

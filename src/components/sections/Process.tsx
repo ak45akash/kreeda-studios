@@ -51,7 +51,11 @@ export function Process() {
       ref={sectionRef}
       className="relative overflow-hidden bg-deep-charcoal py-24 md:py-32"
     >
-      <CoverImage src="/images/process.jpg" alt="" imageClassName="opacity-25 saturate-50" />
+      <CoverImage
+        src="/images/process.jpg"
+        alt=""
+        imageClassName="opacity-30 saturate-75"
+      />
       <div className="absolute inset-0 bg-deep-charcoal/80" aria-hidden />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading

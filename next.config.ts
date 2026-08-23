@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Optimizer returns corrupt responses on this volume; serve originals directly.
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

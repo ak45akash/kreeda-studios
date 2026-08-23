@@ -36,8 +36,8 @@ export function WhyKreeda() {
           <Reveal>
             <div className="relative min-h-[280px] overflow-hidden border border-white/10 lg:min-h-full">
               <CoverImage
-                src="/images/why.jpg"
-                alt="Technical visualization atmosphere"
+                src="/images/about-studio.png"
+                alt="Artist crafting a cinematic 3D character"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/20 to-transparent" />

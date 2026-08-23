@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 type CoverImageProps = {
@@ -10,23 +9,31 @@ type CoverImageProps = {
   priority?: boolean;
 };
 
+/**
+ * Full-bleed cover image.
+ * Uses a native <img> — Next's image optimizer was returning corrupt
+ * octet-stream payloads on this project volume, which blanked every section.
+ */
 export function CoverImage({
   src,
   alt,
   className,
   imageClassName,
-  sizes = "100vw",
   priority = false,
 }: CoverImageProps) {
   return (
     <div className={cn("absolute inset-0 overflow-hidden", className)}>
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={src}
         alt={alt}
-        fill
-        sizes={sizes}
-        priority={priority}
-        className={cn("object-cover", imageClassName)}
+        decoding={priority ? "sync" : "async"}
+        fetchPriority={priority ? "high" : "auto"}
+        className={cn(
+          "absolute inset-0 h-full w-full object-cover",
+          imageClassName,
+        )}
+        draggable={false}
       />
     </div>
   );

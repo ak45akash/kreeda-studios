@@ -6,7 +6,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export function Technology() {
   return (
     <section className="relative overflow-hidden bg-near-black py-24 md:py-32">
-      <CoverImage src="/images/technology.jpg" alt="" imageClassName="opacity-20" />
+      <CoverImage
+        src="/images/technology.jpg"
+        alt=""
+        imageClassName="opacity-25"
+      />
       <div className="absolute inset-0 bg-near-black/75" aria-hidden />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-kreeda-blue/30 to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

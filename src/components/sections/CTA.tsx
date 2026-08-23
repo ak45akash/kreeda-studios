@@ -11,9 +11,9 @@ export function CTA() {
   return (
     <section className="relative overflow-hidden bg-near-black py-32 md:py-40">
       <CoverImage
-        src="/images/cta.jpg"
+        src="/images/hero-worlds.png"
         alt=""
-        className="opacity-30"
+        className="opacity-35"
       />
       <div className="absolute inset-0 bg-near-black/70" aria-hidden />
       <div className="cta-glow absolute inset-0" aria-hidden />
