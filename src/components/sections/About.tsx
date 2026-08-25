@@ -5,8 +5,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const capabilities = [
   { label: "3D", subtitle: "Animation & Modelling" },
   { label: "VFX", subtitle: "Cinematic Visual Effects" },
-  { label: "REALTIME", subtitle: "Unity & Unreal" },
-  { label: "POST", subtitle: "Editing & Motion" },
+  { label: "WEB", subtitle: "Next.js, PHP & Full-Stack" },
+  { label: "REALTIME", subtitle: "Unity, Unreal & Three.js" },
 ];
 
 export function About() {
@@ -30,7 +30,7 @@ export function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-near-black/70 to-transparent" />
               <p className="absolute bottom-4 left-4 font-mono text-[9px] tracking-[0.3em] text-kreeda-blue">
-                STUDIO / PRODUCTION FLOOR
+                STUDIO / CREATIVE + ENGINEERING
               </p>
             </div>
           </Reveal>
@@ -39,15 +39,15 @@ export function About() {
             <Reveal>
               <div className="space-y-6 text-base leading-relaxed text-muted-gray md:text-lg">
                 <p>
-                  Kreeda Studios is a multidisciplinary creative studio combining
-                  art, animation, visual effects, design and real-time technology
-                  to create compelling digital experiences.
+                  Kreeda Studios is a multidisciplinary studio combining art,
+                  animation, visual effects, design and software engineering to
+                  create compelling digital experiences.
                 </p>
                 <p>
-                  We work across 3D animation, modelling, VFX, video editing,
-                  architectural visualization, 2D animation and interactive
-                  production using industry-standard creative and game-development
-                  tools.
+                  We work across 3D animation, modelling, VFX, archviz and
+                  real-time engines — and we also build modern websites and
+                  platforms with Next.js, WordPress, PHP, Laravel, MERN, Three.js
+                  and ShadCN-driven UI systems.
                 </p>
               </div>
             </Reveal>

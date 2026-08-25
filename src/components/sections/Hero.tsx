@@ -39,7 +39,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-24 pt-32 sm:px-6 lg:px-8">
         <Reveal>
           <p className="mb-6 text-[10px] uppercase tracking-[0.4em] text-kreeda-blue sm:text-xs">
-            3D • ANIMATION • VFX • REAL-TIME
+            3D • VFX • WEB • REAL-TIME
           </p>
         </Reveal>
 
@@ -53,8 +53,9 @@ export function Hero() {
 
         <Reveal delay={0.2}>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-gray sm:text-lg">
-            3D animation, visual effects, digital environments and cinematic
-            content crafted for brands, games, architecture and ambitious ideas.
+            Cinematic production and modern web engineering — 3D, VFX, real-time
+            experiences and product-grade sites with Next.js, WordPress, Laravel,
+            MERN and Three.js.
           </p>
         </Reveal>
 
@@ -77,7 +78,7 @@ export function Hero() {
 
         <Reveal delay={0.4}>
           <p className="mt-16 text-[10px] uppercase tracking-[0.3em] text-muted-gray/70">
-            CREATIVE PRODUCTION / REAL-TIME 3D / VISUAL STORYTELLING
+            CREATIVE PRODUCTION / WEB DEVELOPMENT / IMMERSIVE EXPERIENCES
           </p>
         </Reveal>
       </div>

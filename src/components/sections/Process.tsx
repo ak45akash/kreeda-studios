@@ -61,7 +61,7 @@ export function Process() {
         <SectionHeading
           sectionNumber="03 / PROCESS"
           eyebrow="Creative Pipeline"
-          title={"FROM BRIEF TO\nFINAL FRAME."}
+          title={"FROM BRIEF TO\nFINAL DELIVERY."}
         />
 
         <div className="relative hidden lg:block">

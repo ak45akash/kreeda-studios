@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Kreeda Studios",
   title:
-    "Kreeda Studios | 3D Animation, VFX, 3D Modelling & Creative Production",
+    "Kreeda Studios | Creative Production, Web Development & Real-Time Experiences",
   description:
-    "Kreeda Studios creates 3D animation, 3D modelling, VFX, video editing, architectural visualization, 2D animation and real-time experiences using Unity and Unreal Engine.",
+    "Kreeda Studios builds cinematic 3D worlds and modern web products — from animation, VFX and Unreal/Unity to Next.js, WordPress, Laravel, MERN and immersive Three.js experiences.",
   url: "https://kreedastudios.com",
 } as const;
 
@@ -17,12 +17,12 @@ export const NAV_LINKS = [
 ] as const;
 
 export const FOOTER_SERVICES = [
-  "3D Animation",
-  "3D Modelling",
-  "VFX",
-  "Video Editing",
-  "Architectural Visualization",
+  "3D Animation & VFX",
   "Unity & Unreal",
+  "Web Development",
+  "Next.js & MERN",
+  "WordPress & Laravel",
+  "Three.js Experiences",
 ] as const;
 
 export const PROJECT_TYPES = [
@@ -34,6 +34,11 @@ export const PROJECT_TYPES = [
   "Architectural Visualization",
   "Unity",
   "Unreal Engine",
+  "Web Development",
+  "WordPress / PHP",
+  "Next.js / React",
+  "MERN / Laravel",
+  "Three.js / Immersive Web",
   "Other",
 ] as const;
 

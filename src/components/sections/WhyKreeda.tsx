@@ -5,20 +5,23 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const values = [
   {
     title: "Creative + Technical",
-    description: "Art direction and technical execution under one roof.",
+    description:
+      "Art direction, production pipelines and full-stack engineering under one roof.",
   },
   {
     title: "Built for Motion",
-    description: "We think in frames, movement, light and composition.",
+    description:
+      "We think in frames, interaction, light, composition and product flow.",
   },
   {
-    title: "Real-Time Ready",
-    description: "Experience with Unity and Unreal Engine workflows.",
+    title: "Web & Real-Time Ready",
+    description:
+      "From Unity and Unreal to Next.js, Laravel, MERN and Three.js experiences.",
   },
   {
     title: "Production Mindset",
     description:
-      "Designed around clean assets, efficient workflows and dependable delivery.",
+      "Clean assets, scalable code, efficient workflows and dependable delivery.",
   },
 ];
 
@@ -37,12 +40,13 @@ export function WhyKreeda() {
             <div className="relative min-h-[280px] overflow-hidden border border-white/10 lg:min-h-full">
               <CoverImage
                 src="/images/about-studio.png"
-                alt="Artist crafting a cinematic 3D character"
+                alt="Creative and technical production at Kreeda Studios"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/20 to-transparent" />
               <p className="absolute bottom-5 left-5 max-w-xs text-sm text-metallic-gray">
-                One studio for art, animation, VFX and real-time worlds.
+                One studio for cinematic worlds, immersive web and shipped
+                products.
               </p>
             </div>
           </Reveal>

@@ -37,8 +37,8 @@ export function CTA() {
 
         <Reveal delay={0.2}>
           <p className="mx-auto mt-6 max-w-xl text-muted-gray">
-            Tell us what you&apos;re imagining. We&apos;ll help turn the idea
-            into something people can see, feel and remember.
+            Whether it&apos;s a cinematic world, a product site, or an immersive
+            web experience — tell us what you&apos;re building.
           </p>
         </Reveal>
 

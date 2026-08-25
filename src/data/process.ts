@@ -8,26 +8,31 @@ export const processSteps: ProcessStep[] = [
   {
     number: "01",
     title: "DISCOVER",
-    description: "Understand the brief, audience and objective.",
+    description:
+      "Clarify goals, audience, scope and whether the work is cinematic, interactive or product-led.",
   },
   {
     number: "02",
     title: "CONCEPT",
-    description: "Develop visual direction, references and creative approach.",
+    description:
+      "Define visual direction, architecture, references and the creative or technical approach.",
   },
   {
     number: "03",
     title: "BUILD",
-    description: "Model, design, animate and construct the world.",
+    description:
+      "Model, animate, design interfaces and develop the product — from frames to full-stack systems.",
   },
   {
     number: "04",
     title: "REFINE",
-    description: "Lighting, materials, VFX, compositing, editing and polish.",
+    description:
+      "Polish lighting, VFX, UX, performance, accessibility and production quality across every layer.",
   },
   {
     number: "05",
     title: "DELIVER",
-    description: "Final renders, edits and optimized deliverables.",
+    description:
+      "Ship final renders, optimized web builds, CMS handoff and dependable launch support.",
   },
 ];

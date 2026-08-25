@@ -1,7 +1,37 @@
-import { marqueeTags, technologies } from "@/data/technologies";
+import {
+  creativeTechnologies,
+  marqueeTags,
+  webTechnologies,
+} from "@/data/technologies";
 import { CoverImage } from "@/components/ui/CoverImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+
+function TechCloud({
+  title,
+  items,
+}: {
+  title: string;
+  items: readonly string[];
+}) {
+  return (
+    <div>
+      <p className="mb-4 text-center text-[10px] uppercase tracking-[0.3em] text-kreeda-blue">
+        {title}
+      </p>
+      <div className="flex flex-wrap justify-center gap-3">
+        {items.map((tech) => (
+          <span
+            key={tech}
+            className="border border-white/10 bg-near-black/40 px-4 py-2 text-xs uppercase tracking-[0.15em] text-metallic-gray backdrop-blur-sm transition-colors hover:border-kreeda-blue/40 hover:text-white"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export function Technology() {
   return (
@@ -22,15 +52,9 @@ export function Technology() {
         />
 
         <Reveal>
-          <div className="mb-12 flex flex-wrap justify-center gap-3">
-            {technologies.map((tech) => (
-              <span
-                key={tech}
-                className="border border-white/10 bg-near-black/40 px-4 py-2 text-xs uppercase tracking-[0.15em] text-metallic-gray backdrop-blur-sm transition-colors hover:border-kreeda-blue/40 hover:text-white"
-              >
-                {tech}
-              </span>
-            ))}
+          <div className="mb-12 space-y-10">
+            <TechCloud title="Creative Production" items={creativeTechnologies} />
+            <TechCloud title="Web Development" items={webTechnologies} />
           </div>
         </Reveal>
 

@@ -12,8 +12,8 @@ export function Footer() {
           <div className="lg:col-span-1">
             <BrandLogo height={72} className="mb-6 px-1" />
             <p className="max-w-xs text-sm leading-relaxed text-muted-gray">
-              Multidisciplinary creative studio combining art, animation, VFX,
-              design and real-time technology.
+              Multidisciplinary studio for cinematic production, immersive
+              experiences and modern web development.
             </p>
           </div>
 

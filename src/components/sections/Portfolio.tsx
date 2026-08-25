@@ -24,7 +24,7 @@ export function Portfolio() {
           sectionNumber="04 / SELECTED WORK"
           eyebrow="Portfolio"
           title="SELECTED WORK"
-          subtitle="A GLIMPSE INTO WHAT WE CAN BUILD."
+          subtitle="CINEMATIC STUDIES AND WEB PRODUCT CONCEPTS."
         />
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
