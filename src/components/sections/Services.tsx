@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
 import { serviceGroups, services } from "@/data/services";
 import { CoverImage } from "@/components/ui/CoverImage";
 import { Reveal } from "@/components/ui/Reveal";
@@ -78,10 +77,6 @@ export function Services() {
                             <p className="flex-1 text-sm leading-relaxed text-muted-gray">
                               {service.description}
                             </p>
-                            <div className="mt-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-kreeda-blue">
-                              <span>Explore</span>
-                              <ArrowUpRight className="h-3 w-3" />
-                            </div>
                           </div>
                         </article>
                       </Reveal>
