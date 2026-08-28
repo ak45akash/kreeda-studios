@@ -17,7 +17,7 @@ export function Hero() {
     >
       <CoverImage
         src="/images/hero-worlds.png"
-        alt=""
+        alt="Cinematic 3D environment artwork by Kreeda Studios"
         priority
         imageClassName="scale-105"
       />

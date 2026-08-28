@@ -42,10 +42,20 @@ export function SectionHeading({
               {eyebrow}
             </span>
           )}
-          <span className="hidden h-px flex-1 max-w-16 bg-kreeda-blue/40 sm:block" />
+          <span
+            className={cn(
+              "hidden h-px max-w-16 bg-kreeda-blue/40 sm:block",
+              align === "center" ? "w-16 shrink-0" : "flex-1",
+            )}
+          />
         </div>
       )}
-      <h2 className="max-w-3xl text-3xl font-medium leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl whitespace-pre-line">
+      <h2
+        className={cn(
+          "max-w-3xl text-3xl font-medium leading-[1.05] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl whitespace-pre-line",
+          align === "center" && "mx-auto",
+        )}
+      >
         {title}
       </h2>
       {subtitle && (

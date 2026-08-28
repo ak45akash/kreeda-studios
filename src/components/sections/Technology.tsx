@@ -35,7 +35,7 @@ function TechCloud({
 
 export function Technology() {
   return (
-    <section className="relative overflow-hidden bg-near-black py-24 md:py-32">
+    <section id="technology" className="relative overflow-hidden bg-near-black py-24 md:py-32">
       <CoverImage
         src="/images/technology.jpg"
         alt=""
@@ -48,7 +48,6 @@ export function Technology() {
           sectionNumber="06 / TECHNOLOGY"
           eyebrow="Capabilities"
           title="TOOLS OF THE TRADE"
-          align="center"
         />
 
         <Reveal>

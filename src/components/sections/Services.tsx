@@ -58,7 +58,7 @@ export function Services() {
                           <div className="relative h-36 overflow-hidden">
                             <CoverImage
                               src={service.image}
-                              alt=""
+                              alt={`${service.title} — Kreeda Studios service`}
                               imageClassName="transition-transform duration-700 group-hover:scale-105"
                               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                             />
@@ -71,9 +71,9 @@ export function Services() {
                               </span>
                               <Icon className="h-5 w-5 text-muted-gray transition-all duration-300 group-hover:scale-110 group-hover:text-kreeda-blue" />
                             </div>
-                            <h3 className="mb-3 text-lg font-medium text-white">
+                            <h4 className="mb-3 text-lg font-medium text-white">
                               {service.title}
-                            </h3>
+                            </h4>
                             <p className="flex-1 text-sm leading-relaxed text-muted-gray">
                               {service.description}
                             </p>

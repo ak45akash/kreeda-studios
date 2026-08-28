@@ -1,10 +1,29 @@
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://kreedastudios.com";
+
 export const SITE = {
   name: "Kreeda Studios",
   title:
     "Kreeda Studios | Creative Production, Web Development & Real-Time Experiences",
   description:
     "Kreeda Studios builds cinematic 3D worlds and modern web products — from animation, VFX and Unreal/Unity to Next.js, WordPress, Laravel, MERN and immersive Three.js experiences.",
-  url: "https://kreedastudios.com",
+  tagline: "Creative production, web development and real-time experiences.",
+  url: SITE_URL,
+  keywords: [
+    "3D animation studio",
+    "VFX studio",
+    "web development agency",
+    "Next.js development",
+    "Unity development",
+    "Unreal Engine",
+    "Three.js experiences",
+    "WordPress development",
+    "Laravel development",
+    "MERN stack",
+    "architectural visualization",
+    "real-time 3D",
+    "creative production studio",
+  ],
 } as const;
 
 export const NAV_LINKS = [
