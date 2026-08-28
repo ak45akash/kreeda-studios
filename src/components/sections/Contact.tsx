@@ -148,8 +148,8 @@ export function Contact() {
           <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="relative hidden min-h-[420px] overflow-hidden border border-white/10 lg:block">
               <CoverImage
-                src="/images/about-studio.png"
-                alt="Creative production workspace"
+                src="/images/contact.jpg"
+                alt="Modern development workspace"
                 sizes="40vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-near-black via-near-black/30 to-transparent" />
